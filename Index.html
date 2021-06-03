@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="mobile_nav">
+      <img width="30px" class="ham" src="./assets/images/menu.svg" alt="" />
+      <span>Lorem </span>
+      <img width="20px" src="./assets/images/shopping-cart.svg" alt="" />
+    </header>
+    <section class="container">
+      <nav class="nav">
+        <div class="close"><span>Close</span></div>
+        <div class="logo">
+          <span
+            >Lorem <br />
+            Ipsum</span
+          >
+        </div>
+        <ul>
+          <li>
+            <strike style="color: red">
+              <span style="color: black"> About</span>
+            </strike>
+          </li>
+          <li>Services</li>
+          <li>Cuisine</li>
+          <li>Gallery</li>
+          <li>Contact</li>
+          <li>Book</li>
+        </ul>
+        <button class="button">Cart</button>
+      </nav>
+      <main>
+        <div class="title">
+          <h1>What are you </h1>
+         <h1>having for Lunch?</h1>
+        </div>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ea
+            et fugit voluptatum nostrum mollitia quae eveniet labore
+          </p>
+        </div>
+        <div style="width: 100%">
+          <div class="products">
+            <div>
+              <img src="./assets/images/pic_1.jpg" alt="" />
+              <h4>Mexican Taco</h4>
+            </div>
+            <div>
+              <img src="./assets/images/pic_1.jpg" alt="" />
+              <h4>Farmhouse Pizza</h4>
+            </div>
+            <div>
+              <img src="./assets/images/pic_1.jpg" alt="" />
+              <h4>Chicken Burger</h4>
+            </div>
+            <div>
+              <img src="./assets/images/pic_1.jpg" alt="" />
+              <h4>Loaded Nachos</h4>
+            </div>
+            <div>
+              <img src="./assets/images/pic_1.jpg" alt="" />
+              <h4>Hakka Noodles</h4>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <script>
+        let header = document.querySelector(".nav");
+        let menuIcon = document.querySelector(".ham");
+        let closeIcon = document.querySelector(".close span");
+        menuIcon.addEventListener("click", () => {
+          header.classList.add("active");
+        });
+        closeIcon.addEventListener("click", () => {
+          header.classList.remove("active");
+        });
+      </script>
+    </section>
+  </body>
+</html>
